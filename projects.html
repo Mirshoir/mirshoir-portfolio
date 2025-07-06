@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Mirshoir Rustamaliev</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      padding: 1em 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+
+    #projects {
+      padding: 30px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .project h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .project img,
+    .project video {
+      width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .project p {
+      color: #444;
+      margin: 8px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h1 style="text-align:center;">My Projects</h1>
+
+      <article class="project">
+        <h2>Flood AI Simulation</h2>
+        <p><strong>Tech Stack:</strong> Raster, Shapefile, Machine Learning</p>
+        <p>A system to predict and visualize urban flood risk using raster data, shapefiles, and machine learning. Output includes interactive flood maps.</p>
+        <video controls>
+          <source src="assets/flood-ai-simulation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>Tags:</strong> AI, Simulation, Geospatial</p>
+      </article>
+
+      <article class="project">
+        <h2>Historia AI – Voice Assistant</h2>
+        <p><strong>Tech Stack:</strong> Flask, JWT, AISHA TTS</p>
+        <p>Local-first voice assistant for ICD-10 transcription with speech-to-text and multilingual TTS. Built with Flask and vanilla JS frontend.</p>
+        <img src="assets/img.png" alt="Historia AI Screenshot" />
+        <p><strong>Tags:</strong> AI, Voice Assistant, Healthcare</p>
+      </article>
+
+      <article class="project">
+        <h2>Health Chatbot</h2>
+        <p><strong>Tech Stack:</strong> Streamlit, LLaVA, Mistral</p>
+        <p>Multimodal health chatbot with emotional camera input, real-time advice, and LLM reasoning powered by ChromaDB + Mistral.</p>
+        <video controls>
+          <source src="assets/AvicennaChatbot%20demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>Tags:</strong> AI, Chatbot, Streamlit</p>
+      </article>
+
+      <article class="project">
+        <h2>Urban Disaster Dashboard</h2>
+        <p><strong>Tech Stack:</strong> Streamlit, Geopandas, Random Forest</p>
+        <p>A real-time dashboard for disaster prevention. Uses point/raster feature extraction, ML predictions, and color-coded risk layers.</p>
+        <img src="assets/hazard_map.png" alt="Urban Disaster Screenshot" />
+        <p><strong>Tags:</strong> AI, Streamlit, Disaster Management</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mirshoir Rustamaliev. All rights reserved.</p>
+  </footer>
+</body>
+</html>
