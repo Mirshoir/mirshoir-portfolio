@@ -11,6 +11,7 @@
       background-color: #f9f9f9;
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     header {
@@ -35,47 +36,91 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
+      transition: color 0.3s;
     }
 
     nav ul li a:hover {
-      text-decoration: underline;
+      color: #00bfff;
     }
 
     main {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 0 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
     }
 
-    #projects {
-      padding: 30px;
-    }
-
-    .project {
+    #projects h1 {
+      text-align: center;
       margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .project h2 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
+      font-size: 2.4rem;
       color: #222;
     }
 
-    .project img,
-    .project video {
-      width: 100%;
-      border-radius: 10px;
-      margin: 10px 0;
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
 
-    .project p {
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .project-card img,
+    .project-card video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .project-content h2 {
+      font-size: 1.5rem;
+      margin: 0 0 10px;
+      color: #007acc;
+    }
+
+    .project-content p {
+      margin: 6px 0;
       color: #444;
-      margin: 8px 0;
+    }
+
+    .tags {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .download-btn {
+      display: block;
+      margin: 40px auto;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      width: fit-content;
+    }
+
+    .download-btn:hover {
+      background-color: #005fa3;
     }
 
     footer {
@@ -84,6 +129,7 @@
       background-color: #222;
       color: #fff;
       margin-top: 40px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -92,7 +138,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -101,45 +147,57 @@
 
   <main>
     <section id="projects">
-      <h1 style="text-align:center;">My Projects</h1>
+      <h1>My Projects</h1>
 
-      <article class="project">
-        <h2>Flood AI Simulation</h2>
-        <p><strong>Tech Stack:</strong> Raster, Shapefile, Machine Learning</p>
-        <p>A system to predict and visualize urban flood risk using raster data, shapefiles, and machine learning. Output includes interactive flood maps.</p>
-        <video controls>
-          <source src="assets/flood-ai-simulation.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p><strong>Tags:</strong> AI, Simulation, Geospatial</p>
-      </article>
+      <div class="projects-grid">
+        <div class="project-card">
+          <video controls>
+            <source src="assets/flood-ai-simulation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="project-content">
+            <h2>Flood AI Simulation</h2>
+            <p><strong>Tech Stack:</strong> Raster, Shapefile, Machine Learning</p>
+            <p>Predicts and visualizes urban flood risk using raster data, shapefiles, and ML. Generates interactive flood maps.</p>
+            <p class="tags">#AI #Simulation #Geospatial</p>
+          </div>
+        </div>
 
-      <article class="project">
-        <h2>Historia AI – Voice Assistant</h2>
-        <p><strong>Tech Stack:</strong> Flask, JWT, AISHA TTS</p>
-        <p>Local-first voice assistant for ICD-10 transcription with speech-to-text and multilingual TTS. Built with Flask and vanilla JS frontend.</p>
-        <img src="assets/img.png" alt="Historia AI Screenshot" />
-        <p><strong>Tags:</strong> AI, Voice Assistant, Healthcare</p>
-      </article>
+        <div class="project-card">
+          <img src="assets/img.png" alt="Historia AI Screenshot" />
+          <div class="project-content">
+            <h2>Historia AI – Voice Assistant</h2>
+            <p><strong>Tech Stack:</strong> Flask, JWT, AISHA TTS</p>
+            <p>Local-first ICD-10 transcription assistant with multilingual speech-to-text and TTS.</p>
+            <p class="tags">#AI #VoiceAssistant #Healthcare</p>
+          </div>
+        </div>
 
-      <article class="project">
-        <h2>Health Chatbot</h2>
-        <p><strong>Tech Stack:</strong> Streamlit, LLaVA, Mistral</p>
-        <p>Multimodal health chatbot with emotional camera input, real-time advice, and LLM reasoning powered by ChromaDB + Mistral.</p>
-        <video controls>
-          <source src="assets/AvicennaChatbot%20demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p><strong>Tags:</strong> AI, Chatbot, Streamlit</p>
-      </article>
+        <div class="project-card">
+          <video controls>
+            <source src="assets/AvicennaChatbot%20demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="project-content">
+            <h2>Health Chatbot</h2>
+            <p><strong>Tech Stack:</strong> Streamlit, LLaVA, Mistral</p>
+            <p>Multimodal chatbot with emotion detection and LLM reasoning for health advice.</p>
+            <p class="tags">#AI #Chatbot #Streamlit</p>
+          </div>
+        </div>
 
-      <article class="project">
-        <h2>Urban Disaster Dashboard</h2>
-        <p><strong>Tech Stack:</strong> Streamlit, Geopandas, Random Forest</p>
-        <p>A real-time dashboard for disaster prevention. Uses point/raster feature extraction, ML predictions, and color-coded risk layers.</p>
-        <img src="assets/hazard_map.png" alt="Urban Disaster Screenshot" />
-        <p><strong>Tags:</strong> AI, Streamlit, Disaster Management</p>
-      </article>
+        <div class="project-card">
+          <img src="assets/hazard_map.png" alt="Urban Disaster Dashboard Screenshot" />
+          <div class="project-content">
+            <h2>Urban Disaster Dashboard</h2>
+            <p><strong>Tech Stack:</strong> Streamlit, Geopandas, Random Forest</p>
+            <p>Real-time disaster prevention dashboard with ML predictions and visualized risk layers.</p>
+            <p class="tags">#AI #Streamlit #DisasterManagement</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="assets/Mirshoir_Portfolio.pdf" class="download-btn" download>📄 Download Full Portfolio</a>
     </section>
   </main>
 
