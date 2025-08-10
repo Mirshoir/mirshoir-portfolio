@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rustamaliev Mirshoir - Personal Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #222;
-      padding: 1em 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 700px;
-      margin: 60px auto;
-      text-align: center;
-      background: #fff;
-      padding: 40px 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    }
-
-    #intro img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #007acc;
-      margin-bottom: 20px;
-    }
-
-    #intro h1 {
-      font-size: 2.8rem;
-      margin: 0 0 10px;
-      font-weight: 700;
-      color: #222;
-    }
-
-    #intro p {
-      font-size: 1.3rem;
-      color: #555;
-      margin: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: #fff;
-      margin-top: 60px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Rustamaliev Mirshoir - AI Developer & Robotics Enthusiast" />
+    <title>Portfolio | Rustamaliev Mirshoir</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Rustamaliev Mirshoir</h1>
+            <p class="tagline">AI Developer & Robotics Enthusiast</p>
+            <div class="social-links">
+                <a href="https://github.com/mirshoir" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:youremail@example.com">Email</a>
+                <a href="cv.pdf" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section id="intro">
-      <img src="assets/Profile.jpg" alt="Rustamaliev Mirshoir Profile Picture" />
-      <h1>Rustamaliev Mirshoir</h1>
-      <p>AI Developer | Robotics Enthusiast</p>
+    <!-- Projects Section -->
+    <section class="projects container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <!-- Project Card Example -->
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="AI Chatbot" />
+                <h3>AI Chatbot for Biosensors</h3>
+                <p>Developed an AI-powered chatbot to analyze biosensor data in real-time, improving user feedback by 30%.</p>
+                <p><strong>Tech Stack:</strong> Python, PyTorch, Streamlit</p>
+                <a href="https://github.com/mirshoir/project1" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Flood Prediction" />
+                <h3>Flood Prediction Model</h3>
+                <p>Implemented a machine learning model for urban flood risk mapping using geospatial datasets.</p>
+                <p><strong>Tech Stack:</strong> Python, Random Forest, QGIS</p>
+                <a href="https://github.com/mirshoir/project2" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <!-- Add more projects here -->
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Mirshoir Rustamaliev. All rights reserved.</p>
-  </footer>
+    <!-- Skills Section -->
+    <section class="skills container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <h4>Programming</h4>
+                <p>Python, JavaScript, C++</p>
+            </div>
+            <div>
+                <h4>AI & ML</h4>
+                <p>PyTorch, TensorFlow, OpenCV</p>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <p>Git, Docker, Arduino</p>
+            </div>
+            <div>
+                <h4>Soft Skills</h4>
+                <p>Teamwork, Problem Solving, Research</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section class="experience container">
+        <h2>Experience & Education</h2>
+        <ul>
+            <li><strong>2024 - Present:</strong> AI Research Intern at [Company Name]</li>
+            <li><strong>2020 - 2024:</strong> Bachelor in Computer Science, [University Name]</li>
+            <!-- Add more -->
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Rustamaliev Mirshoir | <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
