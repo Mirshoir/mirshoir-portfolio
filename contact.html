@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Mirshoir Rustamaliev</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Dc5dQ7y4fjT5umxq08SbikUotR2Vqk9YjEcxjzIYUwq0QPCfZuh+eF/m0KMI6cNfNRb0aR7SxF4xPOq6VOSYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f7fa;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #222;
+      background-color: #1a1a1a;
       padding: 1em 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav ul {
@@ -34,45 +38,67 @@
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #4db8ff;
     }
 
     main {
       max-width: 700px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 20px;
       background: #fff;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
     }
 
     section#contact {
       padding: 30px;
+      text-align: center;
     }
 
     section#contact h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       color: #333;
     }
 
-    section#contact p {
-      margin-bottom: 1rem;
-      color: #444;
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      margin: 10px 0;
+      justify-content: center;
     }
 
-    section#contact a {
+    .contact-item a {
       color: #007acc;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
-    section#contact a:hover {
-      text-decoration: underline;
+    .contact-item a:hover {
+      color: #005fa3;
+    }
+
+    .contact-item i {
+      color: #007acc;
+      font-size: 1.3rem;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #222;
+      background-color: #1a1a1a;
       color: #fff;
       margin-top: 40px;
     }
@@ -85,19 +111,39 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" style="color:#4db8ff;">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="contact">
-      <h1>Contact</h1>
-      <p>Email: <a href="mailto:mirshoir29@gmail.com">mirshoir29@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Mirshoir" target="_blank" rel="noopener noreferrer">github.com/Mirshoir</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mirshoir-rustamaliev-031698334/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mirshoir-rustamaliev-031698334/</a></p>
-      <p>Phone: <a href="tel:+821084223238">010-8422-3238</a></p>
-      <p>Resume: <a href="https://drive.google.com/file/d/1163Y7gjXjPWe8sNKSYyh1S6BPDEGuuUt/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a></p>
+      <h1>Contact Me</h1>
+      
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:mirshoir29@gmail.com">mirshoir29@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/Mirshoir" target="_blank" rel="noopener noreferrer">github.com/Mirshoir</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/mirshoir-rustamaliev-031698334/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mirshoir-rustamaliev</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+821084223238">010-8422-3238</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-file-pdf"></i>
+        <a href="https://drive.google.com/file/d/1163Y7gjXjPWe8sNKSYyh1S6BPDEGuuUt/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+      </div>
     </section>
   </main>
 
