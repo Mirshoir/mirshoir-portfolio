@@ -1,208 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - Mirshoir Rustamaliev</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #222;
-      padding: 1em 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #00bfff;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    #projects h1 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2.4rem;
-      color: #222;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .project-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-
-    .project-card img,
-    .project-card video {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    .project-content {
-      padding: 20px;
-      flex-grow: 1;
-    }
-
-    .project-content h2 {
-      font-size: 1.5rem;
-      margin: 0 0 10px;
-      color: #007acc;
-    }
-
-    .project-content p {
-      margin: 6px 0;
-      color: #444;
-    }
-
-    .tags {
-      margin-top: 8px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    .download-btn {
-      display: block;
-      margin: 40px auto;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 6px;
-      transition: background-color 0.3s;
-      width: fit-content;
-    }
-
-    .download-btn:hover {
-      background-color: #005fa3;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: #fff;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Mirshoir Rustamaliev</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="header">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">Selected works showcasing AI/ML engineering, GeoAI, research, and full-stack development.</p>
+    </header>
 
-  <main>
-    <section id="projects">
-      <h1>My Projects</h1>
+    <section class="projects-container">
+        
+        <!-- Project Card Template Start -->
 
-      <div class="projects-grid">
         <div class="project-card">
-          <video controls>
-            <source src="assets/flood-ai-simulation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="project-content">
-            <h2>Flood AI Simulation</h2>
-            <p><strong>Tech Stack:</strong> Raster, Shapefile, Machine Learning</p>
-            <p>Predicts and visualizes urban flood risk using raster data, shapefiles, and ML. Generates interactive flood maps.</p>
-            <p class="tags">#AI #Simulation #Geospatial</p>
-          </div>
+            <h2>Avicenna Cognitive-Load Assistant</h2>
+            <p class="project-tagline">Multimodal biosensor system integrating PPG, GSR and LLaVA for real-time cognitive-load analysis.</p>
+
+            <ul class="project-details">
+                <li>Real-time PPG + GSR signal acquisition</li>
+                <li>LLaVA vision module for contextual image reasoning</li>
+                <li>DeepMind-style LLM agent for decision making</li>
+                <li>Python, FastAPI, Streamlit, NumPy, BLE/serial device integration</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
         </div>
 
         <div class="project-card">
-          <img src="assets/img.png" alt="Historia AI Screenshot" />
-          <div class="project-content">
-            <h2>Historia AI – Voice Assistant</h2>
-            <p><strong>Tech Stack:</strong> Flask, JWT, AISHA TTS</p>
-            <p>Local-first ICD-10 transcription assistant with multilingual speech-to-text and TTS.</p>
-            <p class="tags">#AI #VoiceAssistant #Healthcare</p>
-          </div>
+            <h2>Flood Hazard Prediction System</h2>
+            <p class="project-tagline">Machine learning + geospatial analytics for flood hazard classification and explainability.</p>
+
+            <ul class="project-details">
+                <li>Random Forest + CNN hybrid approach</li>
+                <li>Raster & vector preprocessing (GeoPandas, Rasterio)</li>
+                <li>SHAP explainability dashboard</li>
+                <li>Streamlit interactive visualization</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
         </div>
 
         <div class="project-card">
-          <video controls>
-            <source src="assets/AvicennaChatbot demo (2).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="project-content">
-            <h2>Health Chatbot</h2>
-            <p><strong>Tech Stack:</strong> Streamlit, LLaVA, Mistral</p>
-            <p>Multimodal chatbot with emotion detection and LLM reasoning for health advice.</p>
-            <p class="tags">#AI #Chatbot #Streamlit</p>
-          </div>
+            <h2>National Hazard Risk Mapping Platform</h2>
+            <p class="project-tagline">Web-based GIS platform for viewing national-scale hazard risks using Mapbox.</p>
+
+            <ul class="project-details">
+                <li>Layered hazard risk visualization (heatmaps, contours)</li>
+                <li>Raster → vector conversion pipeline</li>
+                <li>Mapbox GL JS + Python backend</li>
+                <li>Used for national-scale disaster monitoring concepts</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
         </div>
 
         <div class="project-card">
-          <img src="assets/hazard_map.png" alt="Urban Disaster Dashboard Screenshot" />
-          <div class="project-content">
-            <h2>Urban Disaster Dashboard</h2>
-            <p><strong>Tech Stack:</strong> Streamlit, Geopandas, Random Forest</p>
-            <p>Real-time disaster prevention dashboard with ML predictions and visualized risk layers.</p>
-            <p class="tags">#AI #Streamlit #DisasterManagement</p>
-          </div>
-        </div>
-      </div>
+            <h2>Galaxy Zoo — Compression Distance Clustering</h2>
+            <p class="project-tagline">Research-oriented ML project using NCD + KNN to cluster galaxy morphology without CNNs.</p>
 
-      <a href="assets/Mirshoir_Portfolio.pdf" class="download-btn" download>📄 Download Full Portfolio</a>
+            <ul class="project-details">
+                <li>NCD (Normalized Compression Distance) feature extraction</li>
+                <li>KNN + hierarchical clustering</li>
+                <li>TSNE + PCA visualizations</li>
+                <li>Python, SciPy, scikit-learn, Matplotlib</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Bank LLM Assistant</h2>
+            <p class="project-tagline">Local LLM that generates SQL queries for a 1M+ record financial dataset.</p>
+
+            <ul class="project-details">
+                <li>LLM-to-SQL generation pipeline</li>
+                <li>PostgreSQL integration</li>
+                <li>Natural-language query interface</li>
+                <li>FastAPI backend + minimal front-end</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>WebRTC Real-Time Face Detection</h2>
+            <p class="project-tagline">Dockerized WebRTC + OpenCV system for stable real-time face detection.</p>
+
+            <ul class="project-details">
+                <li>WebRTC signaling & video pipeline</li>
+                <li>OpenCV face detection</li>
+                <li>Docker deployment</li>
+                <li>FastAPI REST API</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>GeoAI Mini Projects Pack</h2>
+            <p class="project-tagline">Collection of geospatial data-science tasks and ML analyses.</p>
+
+            <ul class="project-details">
+                <li>Raster clipping & preprocessing</li>
+                <li>SHAP explainability experiments</li>
+                <li>Spatial indexing & clustering</li>
+                <li>Multi-model comparisons</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Uzbek Medical Speech-to-Text Prototype</h2>
+            <p class="project-tagline">Android + Whisper-based STT pipeline for domain-specific medical terms.</p>
+
+            <ul class="project-details">
+                <li>Whisper small/medium finetuning concept</li>
+                <li>Android Studio interface</li>
+                <li>Noise-robust transcription pipeline</li>
+                <li>Custom vocabulary modeling</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project Card Template End -->
+
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Mirshoir Rustamaliev. All rights reserved.</p>
-  </footer>
 </body>
 </html>
