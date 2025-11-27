@@ -1,158 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Mirshoir Rustamaliev</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Mirshoir Rustamaliev</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <header class="header">
-        <h1 class="page-title">Projects</h1>
-        <p class="page-subtitle">Selected works showcasing AI/ML engineering, GeoAI, research, and full-stack development.</p>
-    </header>
 
-    <section class="projects-container">
-        
-        <!-- Project Card Template Start -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Mirshoir</a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-        <div class="project-card">
-            <h2>Avicenna Cognitive-Load Assistant</h2>
-            <p class="project-tagline">Multimodal biosensor system integrating PPG, GSR and LLaVA for real-time cognitive-load analysis.</p>
+<section>
+  <h2>Projects</h2>
 
-            <ul class="project-details">
-                <li>Real-time PPG + GSR signal acquisition</li>
-                <li>LLaVA vision module for contextual image reasoning</li>
-                <li>DeepMind-style LLM agent for decision making</li>
-                <li>Python, FastAPI, Streamlit, NumPy, BLE/serial device integration</li>
-            </ul>
+  <div class="project-grid">
 
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-                <a href="#" class="btn">Demo</a>
-            </div>
-        </div>
+    <div class="project-card">
+      <img src="assets/avicennaChatBot.png" alt="Avicenna" />
+      <h3>Avicenna Cognitive-Load Assistant</h3>
+      <p>
+        Multimodal biosensor assistant combining PPG, GSR, vision models and LLM reasoning
+        to estimate cognitive load and provide human-readable feedback.
+      </p>
+      <p><strong>Tech:</strong> Python, PyTorch, Streamlit, BLE, LLaVA</p>
+      <a class="btn" href="https://github.com/Mirshoir/Chatbot_for_Biosensor1" target="_blank">GitHub</a>
+    </div>
 
-        <div class="project-card">
-            <h2>Flood Hazard Prediction System</h2>
-            <p class="project-tagline">Machine learning + geospatial analytics for flood hazard classification and explainability.</p>
+    <div class="project-card">
+      <img src="assets/floodhazaerd.png" alt="Flood Hazard" />
+      <h3>Flood Hazard Prediction System</h3>
+      <p>
+        GeoAI pipeline that ingests DEM, rainfall, soil and land-use data to classify flood
+        hazard zones and visualize results in an interactive dashboard.
+      </p>
+      <p><strong>Tech:</strong> Python, Random Forest, GeoPandas, Rasterio, Streamlit</p>
+      <a class="btn" href="https://github.com/Mirshoir/ML_project" target="_blank">GitHub</a>
+    </div>
 
-            <ul class="project-details">
-                <li>Random Forest + CNN hybrid approach</li>
-                <li>Raster & vector preprocessing (GeoPandas, Rasterio)</li>
-                <li>SHAP explainability dashboard</li>
-                <li>Streamlit interactive visualization</li>
-            </ul>
+    <div class="project-card">
+      <img src="assets/hazard_platform.png" alt="National Hazard Platform" />
+      <h3>National Hazard Risk Mapping Platform</h3>
+      <p>
+        Web-based GIS prototype for displaying multi-hazard risk layers at national scale,
+        inspired by ThinkHazard-style visualizations.
+      </p>
+      <p><strong>Tech:</strong> Mapbox, GeoJSON, Python backend</p>
+      <a class="btn" href="#" target="_blank">GitHub (edit link)</a>
+    </div>
 
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-                <a href="#" class="btn">Demo</a>
-            </div>
-        </div>
+    <div class="project-card">
+      <img src="assets/galaxy.png" alt="Galaxy Zoo NCD" />
+      <h3>Galaxy Zoo – Compression-Distance Clustering</h3>
+      <p>
+        Research-oriented project applying Normalized Compression Distance (NCD) and k-NN
+        to self-organize galaxy images by morphology without CNNs.
+      </p>
+      <p><strong>Tech:</strong> Python, gzip, scikit-learn, PCA, t-SNE</p>
+      <a class="btn" href="#" target="_blank">GitHub (edit link)</a>
+    </div>
 
-        <div class="project-card">
-            <h2>National Hazard Risk Mapping Platform</h2>
-            <p class="project-tagline">Web-based GIS platform for viewing national-scale hazard risks using Mapbox.</p>
+    <div class="project-card">
+      <img src="assets/webrtc.png" alt="WebRTC Face" />
+      <h3>WebRTC Real-Time Face Detection</h3>
+      <p>
+        Browser-based face detection with WebRTC streaming to a FastAPI/OpenCV backend,
+        packaged with Docker for easy deployment.
+      </p>
+      <p><strong>Tech:</strong> Python, FastAPI, OpenCV, WebRTC, Docker</p>
+      <a class="btn" href="https://github.com/Mirshoir/webrtc-face-detection1" target="_blank">GitHub</a>
+    </div>
 
-            <ul class="project-details">
-                <li>Layered hazard risk visualization (heatmaps, contours)</li>
-                <li>Raster → vector conversion pipeline</li>
-                <li>Mapbox GL JS + Python backend</li>
-                <li>Used for national-scale disaster monitoring concepts</li>
-            </ul>
+    <div class="project-card">
+      <img src="assets/bank_llm.png" alt="Bank LLM Assistant" />
+      <h3>Bank LLM SQL Assistant</h3>
+      <p>
+        LLM-powered assistant that translates natural-language questions about a large
+        banking dataset into SQL queries and returns explanations.
+      </p>
+      <p><strong>Tech:</strong> Python, FastAPI, local LLM, PostgreSQL</p>
+      <a class="btn" href="#" target="_blank">GitHub (edit link)</a>
+    </div>
 
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-                <a href="#" class="btn">Demo</a>
-            </div>
-        </div>
+    <div class="project-card">
+      <img src="assets/geoai_labs.png" alt="GeoAI Mini Projects" />
+      <h3>GeoAI Mini Projects Pack</h3>
+      <p>
+        Collection of smaller geospatial ML tasks: raster clipping, SHAP explanations,
+        spatial indexing, and model comparison experiments.
+      </p>
+      <p><strong>Tech:</strong> GeoPandas, Rasterio, scikit-learn, SHAP</p>
+      <a class="btn" href="#" target="_blank">GitHub (edit link)</a>
+    </div>
 
-        <div class="project-card">
-            <h2>Galaxy Zoo — Compression Distance Clustering</h2>
-            <p class="project-tagline">Research-oriented ML project using NCD + KNN to cluster galaxy morphology without CNNs.</p>
+    <div class="project-card">
+      <img src="assets/uzbek_stt.png" alt="Uzbek STT" />
+      <h3>Uzbek Medical Speech-to-Text Prototype</h3>
+      <p>
+        Early prototype for an Uzbek STT system focused on medical terminology,
+        exploring Whisper-style models and Android integration.
+      </p>
+      <p><strong>Tech:</strong> Python, STT models, Android (concept)</p>
+      <a class="btn" href="#" target="_blank">GitHub (edit link)</a>
+    </div>
 
-            <ul class="project-details">
-                <li>NCD (Normalized Compression Distance) feature extraction</li>
-                <li>KNN + hierarchical clustering</li>
-                <li>TSNE + PCA visualizations</li>
-                <li>Python, SciPy, scikit-learn, Matplotlib</li>
-            </ul>
+  </div>
+</section>
 
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-                <a href="#" class="btn">Demo</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h2>Bank LLM Assistant</h2>
-            <p class="project-tagline">Local LLM that generates SQL queries for a 1M+ record financial dataset.</p>
-
-            <ul class="project-details">
-                <li>LLM-to-SQL generation pipeline</li>
-                <li>PostgreSQL integration</li>
-                <li>Natural-language query interface</li>
-                <li>FastAPI backend + minimal front-end</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-                <a href="#" class="btn">Demo</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h2>WebRTC Real-Time Face Detection</h2>
-            <p class="project-tagline">Dockerized WebRTC + OpenCV system for stable real-time face detection.</p>
-
-            <ul class="project-details">
-                <li>WebRTC signaling & video pipeline</li>
-                <li>OpenCV face detection</li>
-                <li>Docker deployment</li>
-                <li>FastAPI REST API</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h2>GeoAI Mini Projects Pack</h2>
-            <p class="project-tagline">Collection of geospatial data-science tasks and ML analyses.</p>
-
-            <ul class="project-details">
-                <li>Raster clipping & preprocessing</li>
-                <li>SHAP explainability experiments</li>
-                <li>Spatial indexing & clustering</li>
-                <li>Multi-model comparisons</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h2>Uzbek Medical Speech-to-Text Prototype</h2>
-            <p class="project-tagline">Android + Whisper-based STT pipeline for domain-specific medical terms.</p>
-
-            <ul class="project-details">
-                <li>Whisper small/medium finetuning concept</li>
-                <li>Android Studio interface</li>
-                <li>Noise-robust transcription pipeline</li>
-                <li>Custom vocabulary modeling</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="#" class="btn">GitHub</a>
-            </div>
-        </div>
-
-        <!-- Project Card Template End -->
-
-    </section>
+<footer>
+  © 2025 Rustamaliev Mirshoir
+</footer>
 
 </body>
 </html>
