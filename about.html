@@ -4,63 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Mirshoir Rustamaliev</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="logo">Mirshoir</a>
-    <ul>
+
+    <span class="logo-text">Mirshoir</span>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <button id="theme-toggle">🌙</button>
   </div>
 </nav>
 
+<!-- ABOUT SECTION -->
 <section>
   <h2>About Me</h2>
 
   <p class="about-text">
-    I am an AI and GeoAI engineer with a background in Computer Science from Sejong University.
-    I enjoy building practical systems: biosensor-driven cognitive-load assistants, flood-hazard
-    prediction pipelines, geospatial decision-support tools, and research-style ML experiments.
+    I’m an AI/ML and GeoAI engineer with a strong interest in building 
+    real-world systems that combine machine learning, geospatial analysis, 
+    multimodal signals, and intelligent automation. I enjoy taking projects 
+    from idea to deployment, creating tools that make a measurable impact.
   </p>
 
   <p class="about-text">
-    My work usually sits at the intersection of three areas: machine learning, geospatial data,
-    and real-time applications. I like projects where there is a clear real-world impact:
-    disaster risk reduction, improved user feedback loops, or smarter public services.
+    My work spans cognitive-load analysis using biosensors, hazard prediction 
+    using geospatial ML, LLM-powered assistants, and full-stack AI applications. 
+    I’m always pushing myself to build cleaner, smarter, and more scalable systems 
+    while continuing to learn and experiment with new technologies.
   </p>
 
   <div class="about-grid">
+
     <div class="about-box">
-      <h3>Focus Areas</h3>
-      <p>Applied ML · LLMs & agents · GeoAI · remote sensing · real-time systems.</p>
+      <h3>AI & ML Focus</h3>
+      <p>
+        Applied machine learning, multimodal systems, LLMs, time-series processing, 
+        geospatial AI, and deep learning pipelines.
+      </p>
     </div>
+
     <div class="about-box">
       <h3>What I Build</h3>
-      <p>End-to-end prototypes: data pipelines, training scripts, evaluation, backends, and simple UIs.</p>
+      <p>
+        End-to-end prototypes: data engineering, model training, evaluation, backend APIs, 
+        dashboards, and interactive tools.
+      </p>
     </div>
+
     <div class="about-box">
-      <h3>Current Goals</h3>
-      <p>Strengthen my research portfolio, ship production-ready AI tools, and pursue graduate studies in AI/GeoAI.</p>
+      <h3>Research Direction</h3>
+      <p>
+        GeoAI, hazard prediction, multimodal reasoning, compression-based ML, and 
+        cognitive-state modeling using biosignals.
+      </p>
     </div>
+
+    <div class="about-box">
+      <h3>Current Goal</h3>
+      <p>
+        Strengthen my research portfolio and pursue graduate studies in AI / GeoAI while 
+        building useful ML tools for real-world problems.
+      </p>
+    </div>
+
   </div>
 </section>
 
+<!-- EDUCATION & EXPERIENCE -->
 <section>
-  <h2>Education & Roles</h2>
+  <h2>Education & Experience</h2>
+
   <ul class="timeline">
-    <li><strong>AI Research Intern – Mek-Lab</strong><br>Working on AI/ML projects with a focus on LLMs and applied ML systems.</li>
-    <li><strong>B.Sc. Computer Science – Sejong University</strong><br>Coursework in ML, data science, and software engineering; multiple project-based classes and research assistance.</li>
+
+    <li>
+      <strong>AI Research Intern — Mek-Lab (2024 – Present)</strong><br />
+      Working on applied AI systems, multimodal agents, and end-to-end ML pipelines.
+    </li>
+
+    <li>
+      <strong>B.Sc. Computer Science — Sejong University (2020 – 2024)</strong><br />
+      Focused on ML, geospatial data, software engineering, and research-based projects.
+    </li>
+
   </ul>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2025 Rustamaliev Mirshoir
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
