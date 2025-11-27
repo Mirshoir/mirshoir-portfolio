@@ -4,29 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirshoir Rustamaliev | AI & GeoAI Engineer</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
+<!-- NAVIGATION BAR -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="logo">Mirshoir</a>
-    <ul>
+
+    <span class="logo-text">Mirshoir</span>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <button id="theme-toggle">🌙</button>
+
   </div>
 </nav>
 
+<!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-text">
     <h1>Mirshoir Rustamaliev</h1>
-    <h3>AI / ML · GeoAI · LLM & Full-Stack</h3>
+    <h3>AI / ML • GeoAI • LLM & Full-Stack Engineering</h3>
+
     <p>
-      I design and build AI systems: multimodal biosensor assistants, flood hazard
-      prediction models, geospatial ML platforms, and research-driven ML pipelines.
+      I build intelligent systems: multimodal biosensor assistants, geospatial 
+      hazard prediction pipelines, computer vision tools, and LLM-based applications. 
+      My work blends machine learning, spatial analysis, and practical engineering.
     </p>
+
     <div class="hero-buttons">
       <a href="https://github.com/Mirshoir" target="_blank">GitHub</a>
       <a href="https://linkedin.com" target="_blank" class="secondary">LinkedIn</a>
@@ -35,63 +50,82 @@
   </div>
 
   <div class="hero-img">
-    <!-- change src to your real image path -->
-    <img src="assets/profile.jpg" alt="Mirshoir profile" />
+    <img src="assets/profile.jpg" alt="Mirshoir" />
   </div>
 </section>
 
+<!-- HIGHLIGHTED PROJECTS -->
 <section>
   <h2>Highlighted Projects</h2>
+
   <div class="project-grid">
 
     <div class="project-card">
       <img src="assets/avicennaChatBot.png" alt="Avicenna" />
       <h3>Avicenna Cognitive-Load Assistant</h3>
-      <p>Multimodal biosensor platform using PPG, GSR and LLMs for real-time cognitive-load insights.</p>
+      <p>
+        Multimodal biosensor platform combining PPG, GSR, LLaVA vision, 
+        and an LLM agent to compute cognitive-load in real time.
+      </p>
       <p><strong>Tech:</strong> Python, PyTorch, Streamlit, BLE</p>
-      <a class="btn" href="https://github.com/Mirshoir/Chatbot_for_Biosensor1" target="_blank">View on GitHub</a>
+      <a class="btn" href="https://github.com/Mirshoir/Chatbot_for_Biosensor1" target="_blank">GitHub</a>
     </div>
 
     <div class="project-card">
       <img src="assets/floodhazaerd.png" alt="Flood Hazard" />
       <h3>Flood Hazard Prediction System</h3>
-      <p>GeoAI model for urban flood risk mapping from DEM, rainfall, soil and land-use layers.</p>
-      <p><strong>Tech:</strong> Python, Random Forest, GeoPandas, QGIS</p>
-      <a class="btn" href="https://github.com/Mirshoir/ML_project" target="_blank">View on GitHub</a>
+      <p>
+        GeoAI model for flood risk mapping from DEM, rainfall, soil and land-use layers. 
+        Includes interactive hazard visualization.
+      </p>
+      <p><strong>Tech:</strong> Python, Random Forest, GeoPandas, Rasterio</p>
+      <a class="btn" href="https://github.com/Mirshoir/ML_project" target="_blank">GitHub</a>
     </div>
 
     <div class="project-card">
-      <img src="assets/webrtc.png" alt="WebRTC Face Detection" />
+      <img src="assets/webrtc.png" alt="WebRTC" />
       <h3>WebRTC Real-Time Face Detection</h3>
-      <p>Dockerized WebRTC + OpenCV system for low-latency real-time face detection in the browser.</p>
-      <p><strong>Tech:</strong> Python, OpenCV, WebRTC, Docker</p>
-      <a class="btn" href="https://github.com/Mirshoir/webrtc-face-detection1" target="_blank">View on GitHub</a>
+      <p>
+        Browser-to-FastAPI pipeline using WebRTC + OpenCV for low-latency real-time 
+        face detection and video analytics.
+      </p>
+      <p><strong>Tech:</strong> WebRTC, FastAPI, OpenCV, Docker</p>
+      <a class="btn" href="https://github.com/Mirshoir/webrtc-face-detection1" target="_blank">GitHub</a>
     </div>
 
   </div>
 </section>
 
+<!-- SKILLS SECTION -->
 <section>
   <h2>Skills</h2>
+
   <div class="skills-grid">
-    <div class="skill-box"><strong>Languages:</strong><br>Python, JavaScript, C++</div>
-    <div class="skill-box"><strong>ML / AI:</strong><br>PyTorch, TensorFlow, scikit-learn, OpenCV</div>
-    <div class="skill-box"><strong>GeoAI:</strong><br>GeoPandas, Rasterio, GDAL, QGIS</div>
-    <div class="skill-box"><strong>Tools:</strong><br>Git, Docker, Linux, AWS</div>
+    <div class="skill-box"><strong>Languages:</strong> Python, JavaScript, C++</div>
+    <div class="skill-box"><strong>ML / AI:</strong> PyTorch, TensorFlow, scikit-learn, OpenCV</div>
+    <div class="skill-box"><strong>GeoAI:</strong> GeoPandas, Rasterio, GDAL, QGIS</div>
+    <div class="skill-box"><strong>Tools:</strong> Git, Docker, Linux, AWS</div>
   </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section>
   <h2>Experience & Education</h2>
+
   <ul class="timeline">
     <li><strong>2024 – Present:</strong> AI Research Intern, Mek-Lab</li>
     <li><strong>2020 – 2024:</strong> B.Sc. Computer Science, Sejong University</li>
   </ul>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  © 2025 Rustamaliev Mirshoir · <a href="mailto:mirshoir29@gmail.com">mirshoir29@gmail.com</a>
+  © 2025 Rustamaliev Mirshoir — 
+  <a href="mailto:mirshoir29@gmail.com">mirshoir29@gmail.com</a>
 </footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
