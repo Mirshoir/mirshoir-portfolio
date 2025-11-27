@@ -1,85 +1,90 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    background: #fdfdfd;
     margin: 0;
-    line-height: 1.6;
-    color: #333;
-    background: #f5f5f5;
+    font-family: "Inter", Arial, sans-serif;
+    color: #222;
 }
 
-.container {
-    width: 90%;
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.page-title {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects */
+.projects-container {
     max-width: 1100px;
-    margin: auto;
-}
-
-.hero {
-    background: linear-gradient(135deg, #0077b6, #023e8a);
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.tagline {
-    font-weight: 300;
-    margin-top: -10px;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 2rem;
-    color: #023e8a;
-}
-
-.project-grid {
+    margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 35px;
+    padding: 20px;
 }
 
 .project-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.25s ease;
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 8px;
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-.project-card h3 {
-    color: #0077b6;
+.project-card h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.project-tagline {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    padding-left: 18px;
+    margin-bottom: 18px;
+}
+
+.project-details li {
+    margin-bottom: 6px;
+}
+
+/* Links & Buttons */
+.project-links {
+    margin-top: 10px;
 }
 
 .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 10px;
-    background: #0077b6;
-    color: white;
-    border-radius: 4px;
+    padding: 8px 16px;
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
     text-decoration: none;
+    margin-right: 8px;
+    transition: 0.2s;
+    font-size: 14px;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 1rem;
-}
-
-.footer {
-    background: #023e8a;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+.btn:hover {
+    background: #444;
 }
