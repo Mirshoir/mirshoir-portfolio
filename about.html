@@ -2,209 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me - Mirshoir Rustamaliev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Mirshoir Rustamaliev</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f5f7fa;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      padding: 1em 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #4db8ff;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      border-radius: 12px;
-      animation: fadeIn 0.8s ease;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(10px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    #about {
-      padding: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 30px;
-    }
-
-    #about img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    #about-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    #about h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-      color: #333;
-    }
-
-    #about p {
-      margin-bottom: 1rem;
-      color: #555;
-    }
-
-    #about ul {
-      padding-left: 20px;
-      margin-bottom: 1.5rem;
-    }
-
-    #about ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    #about a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    #about a:hover {
-      text-decoration: underline;
-    }
-
-    .btn-cv {
-      display: inline-block;
-      padding: 10px 18px;
-      background-color: #007acc;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-cv:hover {
-      background-color: #005fa3;
-    }
-
-    /* Skill tags */
-    .skills {
-      margin-top: 15px;
-    }
-
-    .skill-tag {
-      display: inline-block;
-      background-color: #e6f3ff;
-      color: #007acc;
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      margin: 4px;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-      cursor: default;
-    }
-
-    .skill-tag:hover {
-      transform: scale(1.05);
-      background-color: #cce7ff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1a1a1a;
-      color: #fff;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html" style="color:#4db8ff;">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <img src="assets/Profile.jpg" alt="Profile Photo" />
-      <div id="about-text">
-        <h1>About Me</h1>
-        <p>My name is <strong>Mirshoir Rustamaliev</strong>. I hold a Bachelor's degree in Computer Science and Engineering from Sejong University, South Korea. With a deep passion for artificial intelligence and robotics, I focus on applying AI to reduce human cognitive load, support urban disaster prevention, and integrate drones and biosensors for real-world solutions.</p>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Mirshoir</a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-        <p>My core research interests include geospatial machine learning and large language model (LLM) chatbots that assist with cognitive support and accessibility. I am currently building projects involving multimodal interfaces, voice assistants, and real-time flood risk simulations.</p>
+<section>
+  <h2>About Me</h2>
 
-        <p>I have completed several certifications in machine learning, including:</p>
-        <ul>
-          <li><a href="https://www.freecodecamp.org/certification/Mirshoir/machine-learning-with-python-v7" target="_blank">Machine Learning with Python – freeCodeCamp</a></li>
-          <li><a href="https://www.sololearn.com/certificates/CC-1XGA1XLI" target="_blank">ML for Beginners – Sololearn</a></li>
-        </ul>
+  <p class="about-text">
+    I am an AI and GeoAI engineer with a background in Computer Science from Sejong University.
+    I enjoy building practical systems: biosensor-driven cognitive-load assistants, flood-hazard
+    prediction pipelines, geospatial decision-support tools, and research-style ML experiments.
+  </p>
 
-        <p>I speak both Korean and English and bring an international perspective to my work in AI. My long-term goal is to become a research-driven AI/ML engineer who develops innovative solutions that benefit society globally.</p>
+  <p class="about-text">
+    My work usually sits at the intersection of three areas: machine learning, geospatial data,
+    and real-time applications. I like projects where there is a clear real-world impact:
+    disaster risk reduction, improved user feedback loops, or smarter public services.
+  </p>
 
-        <p>Outside of coding and research, I enjoy reading the works of Rumi and creating web and Android apps powered by AI.</p>
+  <div class="about-grid">
+    <div class="about-box">
+      <h3>Focus Areas</h3>
+      <p>Applied ML · LLMs & agents · GeoAI · remote sensing · real-time systems.</p>
+    </div>
+    <div class="about-box">
+      <h3>What I Build</h3>
+      <p>End-to-end prototypes: data pipelines, training scripts, evaluation, backends, and simple UIs.</p>
+    </div>
+    <div class="about-box">
+      <h3>Current Goals</h3>
+      <p>Strengthen my research portfolio, ship production-ready AI tools, and pursue graduate studies in AI/GeoAI.</p>
+    </div>
+  </div>
+</section>
 
-        <div class="skills">
-          <span class="skill-tag">Machine Learning</span>
-          <span class="skill-tag">LLM Integration</span>
-          <span class="skill-tag">GeoSpatial AI</span>
-          <span class="skill-tag">Streamlit</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Multimodal AI</span>
-        </div>
+<section>
+  <h2>Education & Roles</h2>
+  <ul class="timeline">
+    <li><strong>AI Research Intern – Mek-Lab</strong><br>Working on AI/ML projects with a focus on LLMs and applied ML systems.</li>
+    <li><strong>B.Sc. Computer Science – Sejong University</strong><br>Coursework in ML, data science, and software engineering; multiple project-based classes and research assistance.</li>
+  </ul>
+</section>
 
-        <p style="margin-top:15px;">
-          <a class="btn-cv" href="Mirshoir_Rustamaliev_CV.pdf" target="_blank">📄 Download CV</a>
-        </p>
-      </div>
-    </section>
-  </main>
+<footer>
+  © 2025 Rustamaliev Mirshoir
+</footer>
 
-  <footer>
-    <p>&copy; 2025 Mirshoir Rustamaliev. All rights reserved.</p>
-  </footer>
 </body>
 </html>
