@@ -4,35 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Mirshoir Rustamaliev</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="logo">Mirshoir</a>
-    <ul>
+
+    <span class="logo-text">Mirshoir</span>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <button id="theme-toggle">🌙</button>
+
   </div>
 </nav>
 
+<!-- CONTACT SECTION -->
 <section class="contact-center">
-  <h2>Contact</h2>
-  <p>If you want to talk about AI, GeoAI, research, or collaboration, feel free to reach out.</p>
+  <h2>Get in Touch</h2>
+
+  <p>
+    Whether you want to discuss AI/ML, GeoAI, LLM projects, research ideas, or collaboration,  
+    feel free to reach out. I’m open to opportunities and interesting projects.
+  </p>
+
   <p><strong>Email:</strong> <a href="mailto:mirshoir29@gmail.com">mirshoir29@gmail.com</a></p>
 
-  <div class="contact-links" style="margin-top: 10px;">
+  <div class="contact-links" style="margin-top: 15px;">
     <a href="https://github.com/Mirshoir" target="_blank">GitHub</a>
     <a href="https://linkedin.com" target="_blank">LinkedIn</a>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2025 Rustamaliev Mirshoir
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
