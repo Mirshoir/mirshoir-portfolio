@@ -3,91 +3,156 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Rustamaliev Mirshoir - AI Developer" />
-    <title>Portfolio | Rustamaliev Mirshoir</title>
+    <title>Projects | Mirshoir Rustamaliev</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1>Rustamaliev Mirshoir</h1>
-            <p class="tagline">AI Developer</p>
-            <div class="social-links">
-                <a href="https://github.com/mirshoir" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="mailto:mirshoir29@gmail.com">Email</a>
-                <a href="assets/Rustamaliev Mirshoir Mirolim Ugli (2).pdf" target="_blank">Download CV</a>
-            </div>
-        </div>
+    <header class="header">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">Selected works showcasing AI/ML engineering, GeoAI, research, and full-stack development.</p>
     </header>
 
-    <!-- Projects Section -->
-    <section class="projects container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <!-- Project Card Example -->
-            <div class="project-card">
-                <img src="assets/avicennaChatBot.png" alt="AI Chatbot" />
-                <h3>AI Chatbot for Biosensors</h3>
-                <p>Developed an AI-powered chatbot to analyze biosensor data in real-time, improving user feedback by 30%.</p>
-                <p><strong>Tech Stack:</strong> Python, PyTorch, Streamlit</p>
-                <a href="https://github.com/Mirshoir/Chatbot_for_Biosensor1" target="_blank" class="btn">View on GitHub</a>
-            </div>
+    <section class="projects-container">
+        
+        <!-- Project Card Template Start -->
 
-            <div class="project-card">
-                <img src="assets/floodhazaerd.png" alt="Flood Prediction" />
-                <h3>Flood Prediction Model</h3>
-                <p>Implemented a machine learning model for urban flood risk mapping using geospatial datasets.</p>
-                <p><strong>Tech Stack:</strong> Python, Random Forest, QGIS</p>
-                <a href="https://github.com/Mirshoir/ML_project" target="_blank" class="btn">View on GitHub</a>
-            </div>
+        <div class="project-card">
+            <h2>Avicenna Cognitive-Load Assistant</h2>
+            <p class="project-tagline">Multimodal biosensor system integrating PPG, GSR and LLaVA for real-time cognitive-load analysis.</p>
 
-            <!-- Add more projects here -->
-        </div>
-    </section>
+            <ul class="project-details">
+                <li>Real-time PPG + GSR signal acquisition</li>
+                <li>LLaVA vision module for contextual image reasoning</li>
+                <li>DeepMind-style LLM agent for decision making</li>
+                <li>Python, FastAPI, Streamlit, NumPy, BLE/serial device integration</li>
+            </ul>
 
-    <!-- Skills Section -->
-    <section class="skills container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div>
-                <h4>Programming</h4>
-                <p>Python, JavaScript, C++</p>
-            </div>
-            <div>
-                <h4>AI & ML</h4>
-                <p>PyTorch, TensorFlow, OpenCV</p>
-            </div>
-            <div>
-                <h4>Tools</h4>
-                <p>Git, Docker, Arduino</p>
-            </div>
-            <div>
-                <h4>Soft Skills</h4>
-                <p>Teamwork, Problem Solving, Research</p>
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
             </div>
         </div>
-    </section>
 
-    <!-- Education & Experience -->
-    <section class="experience container">
-        <h2>Experience & Education</h2>
-        <ul>
-            <li><strong>2024 - Present:</strong> AI Research Intern at Mek-Lab</li>
-            <li><strong>2020 - 2024:</strong> Bachelor in Computer Science, Sejong University</li>
-            <!-- Add more -->
-        </ul>
-    </section>
+        <div class="project-card">
+            <h2>Flood Hazard Prediction System</h2>
+            <p class="project-tagline">Machine learning + geospatial analytics for flood hazard classification and explainability.</p>
 
-    <!-- Contact -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 Rustamaliev Mirshoir | <a href="mailto:mirshoir29@gmail.com">mirshoir29@gmail.com</a></p>
+            <ul class="project-details">
+                <li>Random Forest + CNN hybrid approach</li>
+                <li>Raster & vector preprocessing (GeoPandas, Rasterio)</li>
+                <li>SHAP explainability dashboard</li>
+                <li>Streamlit interactive visualization</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
         </div>
-    </footer>
+
+        <div class="project-card">
+            <h2>National Hazard Risk Mapping Platform</h2>
+            <p class="project-tagline">Web-based GIS platform for viewing national-scale hazard risks using Mapbox.</p>
+
+            <ul class="project-details">
+                <li>Layered hazard risk visualization (heatmaps, contours)</li>
+                <li>Raster → vector conversion pipeline</li>
+                <li>Mapbox GL JS + Python backend</li>
+                <li>Used for national-scale disaster monitoring concepts</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Galaxy Zoo — Compression Distance Clustering</h2>
+            <p class="project-tagline">Research-oriented ML project using NCD + KNN to cluster galaxy morphology without CNNs.</p>
+
+            <ul class="project-details">
+                <li>NCD (Normalized Compression Distance) feature extraction</li>
+                <li>KNN + hierarchical clustering</li>
+                <li>TSNE + PCA visualizations</li>
+                <li>Python, SciPy, scikit-learn, Matplotlib</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Bank LLM Assistant</h2>
+            <p class="project-tagline">Local LLM that generates SQL queries for a 1M+ record financial dataset.</p>
+
+            <ul class="project-details">
+                <li>LLM-to-SQL generation pipeline</li>
+                <li>PostgreSQL integration</li>
+                <li>Natural-language query interface</li>
+                <li>FastAPI backend + minimal front-end</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>WebRTC Real-Time Face Detection</h2>
+            <p class="project-tagline">Dockerized WebRTC + OpenCV system for stable real-time face detection.</p>
+
+            <ul class="project-details">
+                <li>WebRTC signaling & video pipeline</li>
+                <li>OpenCV face detection</li>
+                <li>Docker deployment</li>
+                <li>FastAPI REST API</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>GeoAI Mini Projects Pack</h2>
+            <p class="project-tagline">Collection of geospatial data-science tasks and ML analyses.</p>
+
+            <ul class="project-details">
+                <li>Raster clipping & preprocessing</li>
+                <li>SHAP explainability experiments</li>
+                <li>Spatial indexing & clustering</li>
+                <li>Multi-model comparisons</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Uzbek Medical Speech-to-Text Prototype</h2>
+            <p class="project-tagline">Android + Whisper-based STT pipeline for domain-specific medical terms.</p>
+
+            <ul class="project-details">
+                <li>Whisper small/medium finetuning concept</li>
+                <li>Android Studio interface</li>
+                <li>Noise-robust transcription pipeline</li>
+                <li>Custom vocabulary modeling</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="#" class="btn">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project Card Template End -->
+
+    </section>
+
 </body>
 </html>
